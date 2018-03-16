@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 
 import { Car } from '../car.model';
 import { AppState } from '../redux/app.state';
-import { DeleteCar } from '../redux/cars.actions';
+import { DeleteCar, UpdateCar } from '../redux/cars.actions';
 
 @Component({
   selector: 'app-car',
@@ -23,6 +23,6 @@ export class CarComponent implements OnInit {
   }
 
   onBuy() {
-    this.car.isSold = true;
+    this.store.dispatch(new UpdateCar(this.car));
   }
 }
