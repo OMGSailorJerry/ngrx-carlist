@@ -26,9 +26,7 @@ export class AppComponent implements OnInit {
     this.carState = this.store.select('carPage');
   }
 
-  onAdd(car: Car) {
-    this.cars.push(car);
-  }
+
 
   onDelete(car: Car) {
     this.cars = this.cars.filter(el => el.id !== car.id);
