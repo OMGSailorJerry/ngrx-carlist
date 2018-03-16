@@ -4,7 +4,7 @@
   <div class="list-group mt-4">
     <app-car
       [car]="car"
-      *ngFor="let car of cars"
+      *ngFor="let car of (carState | async).cars"
       (deleteCar)="onDelete(car)"></app-car>
   </div>
 </div>

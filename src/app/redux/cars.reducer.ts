@@ -15,9 +15,9 @@ export function CarsReducer(state = initialState, action: AddCar) {
   switch (action.type) {
     case CAR_ACTION.ADD_CAR:
       return {
-        ...state,
-        cars: [ ...state.cars, action.payload ]
-      };
+          ...state,
+          cars: [ ...state.cars, action.payload ]
+        };
 
     default:
       return state;
