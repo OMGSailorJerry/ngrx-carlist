@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CarsFromComponent } from './cars-from/cars-from.component';
 import { CarComponent } from './car/car.component';
 import { CarsReducer } from './redux/cars.reducer';
+import { CarsService } from './cars.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -18,9 +20,10 @@ import { CarsReducer } from './redux/cars.reducer';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     StoreModule.forRoot({ carPage: CarsReducer })
   ],
-  providers: [],
+  providers: [CarsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

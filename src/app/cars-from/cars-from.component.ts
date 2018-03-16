@@ -6,6 +6,7 @@ import { Car } from '../car.model';
 import * as moment from 'moment';
 import { AppState } from '../redux/app.state';
 import { AddCar } from '../redux/cars.actions';
+import { CarsService } from '../cars.service';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class CarsFromComponent {
   carName = '';
   carModel = '';
 
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>, private carsService: CarsService) { }
 
   onAdd() {
     if (this.carModel === '' || this.carName === '') {
@@ -44,6 +45,6 @@ export class CarsFromComponent {
   }
 
   onLoad() {
-    // todo
+    this.carsService.loadCars();
   }
 }
