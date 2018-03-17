@@ -6,18 +6,27 @@
       "date": "12.12.06",
       "model": "Focus",
       "isSold": false
-    }, {
+    },
+    {
       "id": 2,
       "name": "Audi",
       "date": "04.05.2010",
       "model": "S3",
       "isSold": false
-    }, {
+    },
+    {
       "id": 3,
       "name": "BMW",
       "date": "14.05.2017",
       "model": "M3",
       "isSold": false
+    },
+    {
+      "name": "cadsc",
+      "date": "17.03.18",
+      "model": "ewrqw",
+      "isSold": false,
+      "id": 5
     }
   ]
 }
