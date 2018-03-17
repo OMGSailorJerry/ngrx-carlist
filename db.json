@@ -12,7 +12,7 @@
       "name": "Audi",
       "date": "04.05.2010",
       "model": "S3",
-      "isSold": false
+      "isSold": true
     },
     {
       "id": 3,
@@ -22,11 +22,11 @@
       "isSold": false
     },
     {
-      "name": "cadsc",
+      "name": "Tesla",
       "date": "17.03.18",
-      "model": "ewrqw",
+      "model": "Model 3",
       "isSold": false,
-      "id": 5
+      "id": 4
     }
   ]
 }
