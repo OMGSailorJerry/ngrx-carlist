@@ -3,7 +3,7 @@ import { HttpClient,  } from '@angular/common/http';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 
-import { LoadCars, AddCar, DeleteCar, UpdateCar } from './redux/cars.actions';
+import { LoadCars, AddCar, DeleteCar, UpdateCar, PostCar } from './redux/cars.actions';
 import { AppState } from './redux/app.state';
 import { Car, Cars } from './car.model';
 
@@ -28,10 +28,11 @@ export class CarsService {
   }
 
   addCar(car: Car): void {
-    this.http.post(CarsService.BASE_URL + 'cars', car)
-      .subscribe((resp: Car) => {
-        this.store.dispatch(new AddCar(resp));
-      });
+    this.store.dispatch(new PostCar(car));
+    // this.http.post(CarsService.BASE_URL + 'cars', car)
+    //   .subscribe((resp: Car) => {
+    //     this.store.dispatch(new AddCar(resp));
+    //   });
   }
 
   deleteCar(car: Car): void {

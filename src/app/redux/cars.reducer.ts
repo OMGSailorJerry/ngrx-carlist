@@ -20,7 +20,7 @@ export function CarsReducer(state = initialState, action: CarsActions) {
         return {
           ...state,
           cars: [
-            ...state.cars.filter(car => car.id !== action.payload.id )
+            ...state.cars.filter( car => car.id !== action.payload.id )
           ]
         };
     case CAR_ACTION.UPDATE_CAR:
