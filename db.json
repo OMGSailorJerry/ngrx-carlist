@@ -5,7 +5,7 @@
       "name": "Ford",
       "date": "12.12.06",
       "model": "Focus",
-      "isSold": false
+      "isSold": true
     },
     {
       "id": 2,
@@ -19,7 +19,7 @@
       "name": "BMW",
       "date": "14.05.2017",
       "model": "M3",
-      "isSold": false
+      "isSold": true
     },
     {
       "name": "Tesla",
@@ -27,6 +27,13 @@
       "model": "Model 3",
       "isSold": false,
       "id": 4
+    },
+    {
+      "name": "bjsbbjn",
+      "date": "18.03.18",
+      "model": "vdkjbvjkdf",
+      "isSold": false,
+      "id": 5
     }
   ]
 }

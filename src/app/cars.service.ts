@@ -16,15 +16,14 @@ export class CarsService {
 
   constructor(private http: HttpClient, private store: Store<AppState>) {}
 
-  preloadCars(): Observable<any> {
-    return this.http.get(CarsService.BASE_URL + 'cars');
+  preloadCars(): Observable<Car[]> {
+    return this.http.get<Car[]>(CarsService.BASE_URL + 'cars');
   }
 
   loadCars(): void {
     this.preloadCars()
       .subscribe((cars: Car[]) => {
-        console.log(typeof cars, cars);
-          this.store.dispatch(new LoadCars(cars));
+        this.store.dispatch(new LoadCars(cars));
       });
   }
 
