@@ -29,10 +29,10 @@
       "id": 4
     },
     {
-      "name": "bjsbbjn",
+      "name": "Subaru",
       "date": "18.03.18",
-      "model": "vdkjbvjkdf",
-      "isSold": false,
+      "model": "Legacy",
+      "isSold": true,
       "id": 5
     }
   ]
