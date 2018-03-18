@@ -6,6 +6,7 @@ export namespace CAR_ACTION {
   export const DELETE_CAR = 'DELETE_CAR';
   export const UPDATE_CAR = 'UPDATE_CAR';
   export const LOAD_CARS = 'LOAD_CARS';
+  export const POST_CAR = 'POST_CAR';
 }
 
 export class AddCar implements Action {
@@ -32,4 +33,10 @@ export class LoadCars implements Action {
   constructor(public payload: Car[]) { }
 }
 
-export type CarsActions = AddCar | DeleteCar | UpdateCar | LoadCars;
+export class PostCar implements Action {
+  readonly type = CAR_ACTION.POST_CAR;
+
+  constructor(public payload: Car) {}
+}
+
+export type CarsActions = AddCar | DeleteCar | UpdateCar | LoadCars | PostCar;

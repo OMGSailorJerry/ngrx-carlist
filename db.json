@@ -34,6 +34,20 @@
       "model": "Legacy",
       "isSold": true,
       "id": 5
+    },
+    {
+      "name": "vdfv",
+      "date": "18.03.18",
+      "model": "sdf",
+      "isSold": false,
+      "id": 6
+    },
+    {
+      "name": "VAZ",
+      "date": "18.03.18",
+      "model": "2101",
+      "isSold": false,
+      "id": 7
     }
   ]
 }
